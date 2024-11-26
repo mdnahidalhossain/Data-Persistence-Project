@@ -685,6 +685,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056901072}
   m_CullTransparentMesh: 1
+--- !u!1 &1132149634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1132149636}
+  - component: {fileID: 1132149635}
+  m_Layer: 0
+  m_Name: MenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1132149635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132149634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b5b3ef7e9d02f4c89845b95aa5fcd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highestScore: {fileID: 1627488016}
+--- !u!4 &1132149636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132149634}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 312.6489, y: 176.38924, z: -12.561522}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1275955219
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +743,7 @@ GameObject:
   - component: {fileID: 1275955221}
   - component: {fileID: 1275955220}
   - component: {fileID: 1275955224}
+  - component: {fileID: 1275955225}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -804,6 +850,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a16806b5fb0792249b0dcd642a0b5b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1275955225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275955219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9116b1093a48004eb70373058903031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 1730866306}
 --- !u!1 &1561472232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1126,7 @@ GameObject:
   - component: {fileID: 1730866307}
   - component: {fileID: 1730866306}
   m_Layer: 5
-  m_Name: InputField (Legacy)
+  m_Name: Player Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1363,6 +1422,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1275955225}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: SaveNameAndSwitchScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2113890892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1409,3 +1480,4 @@ SceneRoots:
   - {fileID: 1049716033}
   - {fileID: 1275955223}
   - {fileID: 1781756656}
+  - {fileID: 1132149636}
