@@ -11,6 +11,6 @@ public class InputHandler : MonoBehaviour
     public void SaveNameAndSwitchScene()
     {
         Player.playerName = inputField.text; // Store the entered name
-        SceneManager.LoadScene("main"); // Replace with your new scene's name
+        SceneManager.LoadScene("main"); 
     }
 }

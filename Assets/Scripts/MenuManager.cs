@@ -13,7 +13,6 @@ public class MenuManager : MonoBehaviour
 
     public Text highestScore;
 
-    //public static MenuManager playerName;
 
     private void Awake()
     {
@@ -37,8 +36,6 @@ public class MenuManager : MonoBehaviour
     public void LoadScore()
     {
         string filePath = Application.persistentDataPath + "/savefile.json";
-
-        //filePath = Path.Combine(Application.persistentDataPath, "scoreData.json");
 
         if (File.Exists(filePath))
         {

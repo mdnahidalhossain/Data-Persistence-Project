@@ -26,20 +26,6 @@ public class MainManager : MonoBehaviour
     public Text playerNameAndScore;
 
 
-
-    //private void Awake()
-    //{
-    //    if (Instance != null)
-    //    {
-    //        Destroy(gameObject);
-    //        return;
-    //    }
-
-    //    Instance = this;
-    //    DontDestroyOnLoad(gameObject);
-    //    //LoadScore();
-    //}
-
     // Start is called before the first frame update
     void Start()
     {
